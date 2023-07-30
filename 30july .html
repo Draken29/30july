@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>transitions</title>
+        <style>
+            input{
+                width: 200px;
+               transition-property: background-color width;
+               transition-duration: 3s ;
+            }
+              input:focus{
+                width: 500px;
+                background-color: aqua;
+                background-color: brown;
+              }
+              h1{
+                height: 60px;
+                width: 100px;
+                background-color: white;
+                transition: 5s width 1s,4s height 2s ;
+                color: blue;
+              }
+              h1:hover{
+                line-height: 100px;
+               text-align: center;
+               
+              
+               width: 50%;
+               height: 100px;
+              }
+              img:hover{
+                height: 900px;
+                width: 50%;
+                transform:translateX(50%);
+              }
+              img{
+                transition: 3s width,4s transform;
+                width: 500px;
+              }
+        </style>
+    </head>
+    <body>
+    <input type="text" />
+    <h1>hello</h1>
+    <img src="kazo1.jpg"/>
+    </body>
+</html>
